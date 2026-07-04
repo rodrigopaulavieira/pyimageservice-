@@ -5,7 +5,9 @@ import os
 base_path = os.path.dirname(__file__)
 static_path = os.path.join(base_path, "img")
 
-
+# Essa classe uploadHandler é um handler do Tornado responsável por exibir uma
+# página de upload e receber um arquivo enviado pelo usuário, salvando-o no servidor.
+# No Tornado, um RequestHandler trata requisições HTTP como GET e POST.
 class uploadHandler(tornado.web.RequestHandler):
     def get(self):
             self.render("upload.html")
