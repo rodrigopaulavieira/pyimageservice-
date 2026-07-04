@@ -51,6 +51,3 @@ if __name__ == "__main__":
     print("Server started at http://localhost:8080")
     print("Serving static files from:", static_path)
     tornado.ioloop.IOLoop.instance().start()
-    
-    
-    #colocando o comentario para o git, testando uma nova branch
