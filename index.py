@@ -48,6 +48,9 @@ if __name__ == "__main__":
         ("/img/(.*)", tornado.web.StaticFileHandler, {"path": static_path})
     ], debug=True)
     app.listen(8080)
+    
     print("Server started at http://localhost:8080")
     print("Serving static files from:", static_path)
-    tornado.ioloop.IOLoop.instance().start()
+    tornado.ioloop.IOLoop.instance().start() 
+    
+    # O código acima cria um servidor web usando o framework Tornado. Ele define um handler para upload de arquivos, permitindo que os usuários enviem imagens através de um formulário HTML. As imagens são salvas em uma pasta chamada "img" no mesmo diretório do script. O servidor também serve arquivos estáticos dessa pasta, permitindo que as imagens enviadas sejam acessadas diretamente via URL
